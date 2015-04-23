@@ -1,3 +1,9 @@
 language: ruby
+jdk:
+  - openjdk7
 rvm:
   - 2.1.6
+  - jruby-19mode
+addons:
+  code_climate:
+    repo_token: 30de3f179eef8193ff657053390917ac302ec9dae3a8a95a9ce6b430ead32cfb
