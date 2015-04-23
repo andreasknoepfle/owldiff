@@ -12,5 +12,9 @@ module OwlDiff
       }.to_json(*opts)
     end
 
+    def self.from_hash hash
+      OntologyEntity.new(hash["short"],hash["full"])
+    end
+
   end
 end

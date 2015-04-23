@@ -22,7 +22,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    client = OwlDiff::Client.setup "localhost", 4567
+    client.query "http://test.de/a.owl", "http://test.de/b.owl"
+
+or
+
+    OwlDiff::Client.setup "localhost", 4567
+    OwlDiff::Client.diff "http://test.de/a.owl", "http://test.de/b.owl"
 
 ## Development
 

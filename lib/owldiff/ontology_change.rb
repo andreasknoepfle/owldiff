@@ -16,5 +16,10 @@ module OwlDiff
       }.to_json(*opts)
     end
 
+    def self.from_hash hash
+      OntologyChange.new(hash["value"],hash["type"],hash["action"],hash["data"])
+    end
+
+
   end
 end
