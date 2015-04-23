@@ -21,15 +21,15 @@ Or install it yourself as:
     $ gem install owldiff
 
 ## Usage
-
+```ruby
     client = OwlDiff::Client.setup "localhost", 4567
     client.query "http://test.de/a.owl", "http://test.de/b.owl"
-
+```
 or
-
+```ruby
     OwlDiff::Client.setup "localhost", 4567
     OwlDiff::Client.diff "http://test.de/a.owl", "http://test.de/b.owl"
-
+```
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
