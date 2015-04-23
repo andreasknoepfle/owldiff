@@ -1,6 +1,6 @@
 require_relative 'minitest_helper'
 
-class TestOwldiff < Minitest::Test
+class TestOwldiff < Minitest::Unit::TestCase
 
   def setup
     @diff = OwlDiff::OntologyDiff.new false
