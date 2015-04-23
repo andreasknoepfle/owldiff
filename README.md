@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/andreasknoepfle/owldiff.svg)](https://travis-ci.org/andreasknoepfle/owldiff) [![Code Climate](https://codeclimate.com/github/andreasknoepfle/owldiff/badges/gpa.svg)](https://codeclimate.com/github/andreasknoepfle/owldiff) [![Test Coverage](https://codeclimate.com/github/andreasknoepfle/owldiff/badges/coverage.svg)](https://codeclimate.com/github/andreasknoepfle/owldiff)
 
-This is the client library for the andreasknoepfle/owldiff-service server.
+This is the client library for the http://github.com/andreasknoepfle/owldiff-service server.
 
 ## Installation
 
