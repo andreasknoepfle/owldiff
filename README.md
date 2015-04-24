@@ -22,13 +22,15 @@ Or install it yourself as:
 
 ## Usage
 
+```ruby
     client = Owldiff::Client.setup "localhost", 4567
     client.query "http://test.de/a.owl", "http://test.de/b.owl"
-
+```
 or
-
+```ruby
     Owldiff::Client.setup "localhost", 4567
     Owldiff::Client.diff "http://test.de/a.owl", "http://test.de/b.owl"
+```
 
 ## Development
 
