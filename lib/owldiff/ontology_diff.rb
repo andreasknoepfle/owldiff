@@ -1,4 +1,4 @@
-module OwlDiff
+module Owldiff
   class OntologyDiff
     SINGLE_CHANGE_TYPES = [:format,:ontology_id].map{ |type| "#{type}_change".to_sym }
     SET_CHANGE_TYPES = [:prefix,:import,:annotation,:axiom].map{ |type| "#{type}_changes".to_sym }

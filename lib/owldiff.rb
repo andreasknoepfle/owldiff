@@ -7,7 +7,7 @@ require "uri"
 require 'net/http'
 require 'singleton'
 
-module OwlDiff
+module Owldiff
 
   class Client
     include Singleton

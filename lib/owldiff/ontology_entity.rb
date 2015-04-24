@@ -1,4 +1,4 @@
-module OwlDiff
+module Owldiff
   class OntologyEntity
     attr_accessor :short, :full
     def initialize short, full

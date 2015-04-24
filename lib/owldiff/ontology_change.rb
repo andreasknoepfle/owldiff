@@ -1,4 +1,4 @@
-module OwlDiff
+module Owldiff
   class OntologyChange
     attr_accessor :value, :type, :action, :data
     ACTIONS = [:added,:removed,:renamed,:modified]
