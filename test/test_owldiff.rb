@@ -64,7 +64,16 @@ class TestOwldiff < Minitest::Unit::TestCase
     assert_equal Owldiff::OntologyEntity, diff.modified_entities.first.class
   end
 
-
+  def test_error_responses
+    assert_raises(Owldiff::OwldiffError)do
+      Owldiff::OntologyDiff.from_json "{ \"error\" : \"message\" }"
+    end
+    begin
+      Owldiff::OntologyDiff.from_json "{ \"error\" : \"message\" }"
+    rescue  => e
+      assert "message", e.message
+    end
+  end
 
 
 end

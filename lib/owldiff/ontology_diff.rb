@@ -34,6 +34,7 @@ module Owldiff
 
     def self.from_json json
       ontology_changes = JSON.parse(json)
+      raise OwldiffError.new, ontology_changes["error"] if ontology_changes["error"]
       diff = OntologyDiff.new ontology_changes["binary_identical"]
       FROM_JSON.each do |types, block|
         diff.type_from_hash types, ontology_changes, block
