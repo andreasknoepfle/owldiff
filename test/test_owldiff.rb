@@ -51,6 +51,8 @@ class TestOwldiff < Minitest::Unit::TestCase
     Net::HTTP.stubs(:get).returns(File.open(path).read)
     diff = Owldiff::Client.diff "http://test.de/a.owl", "http://test.de/b.owl"
     assert diff
+    diff = Owldiff::Client.diff "http://test.de/a.owl", "http://test.de/b.owl", :base64
+    assert diff
   end
 
   def test_from_json

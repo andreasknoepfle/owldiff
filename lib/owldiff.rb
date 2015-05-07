@@ -33,8 +33,14 @@ module Owldiff
 
     private
 
-    def params url1, url2
-      params = {owl1_url: url1, owl2_url: url2}
+    def params parent, child, base=false
+
+      if base==:base64
+        params = {owl1_base: parent, owl2_base: child}
+      else
+        params = {owl1_url: parent, owl2_url: child}
+      end
+
       URI.encode_www_form params
     end
 
